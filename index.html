@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <article class="top">
+        <h1>Datos Personales</h1>
+    </article>
+    <article class="form">
+        <form class="formulario" id="formulario">
+
+            <div class="grupo" id="grupo-nombre">
+                <label for="name" class="label">Primer Nombre: </label>
+                <input type="text" class="input" name="nombre" id="nombre" >
+                <p class="input-error">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="grupo" id="grupo-apellido">
+                <label for="apellido" class="label">Primer Apellido</label>
+                <input type="text" class="input" id="apellido" name="apellido">
+                <p class="input-error">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            
+
+            <div class="grupo" id="grupo-tipo-doc">
+                <label for="tipo-doc" id="tipo" class="label">Tipo de Documento:</label>
+                <div id="tipo-d">
+                    <label for="dni">DNI<input id="tipo-doc-dni"  type="radio" name="tipo-doc" value="dni" required></label>
+                    <label for="cuil">CUIL<input id="tipo-doc-cuil"  type="radio" name="tipo-doc"value="cuil"></label>
+                </div>
+                <p class="input-error">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+                
+            </div>
+            <div class="grupo" id="grupo-num-doc">
+                <label for="num-doc" class="label">Numero de documento</label>
+                <input type="number" class="input" name="num-doc"id="num-doc" >
+                <p class="input-error">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+            </div>
+            <div class="grupo" id="grupo-direccion">
+                <label for="direccion" class="label">Direccion: </label>
+                <textarea class="textarea" id="direccion" name="direccion"></textarea>
+
+                <p class="input-error">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+            </div>
+            <div class="mensaje" id="mensaje">
+				<p><b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+            <div class="boton-enviar">
+                <button type="submit" class="button">Enviar</button>
+                <p class="mensaje-exito" id="mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+            
+
+			
+
+
+        </form>
+
+
+    </article>
+    <script src="./js/app.js"> </script>
+</body>
+</html>

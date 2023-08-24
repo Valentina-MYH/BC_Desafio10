@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+body{
+    color:#002c59;
+    background-color: #001c38;;
+    margin: 5%;
+    font-family: 'Oswald', sans-serif;
+    font-size:x-large;
+    letter-spacing: 1px;
+}
+h1{
+    color:#EAE3D7;
+    font-size: 50px;
+    text-shadow: #013970 5PX 5PX;
+    margin-left: 10px;
+}
+
+.formulario{
+    background-color: #EAE3D7;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 75%px;
+
+}
+.label{
+    display: block;
+    font-weight: bold
+}
+
+.input, .textarea{
+    width: 90%;
+    height: 40px;
+    background-color: #fcf8f2fc;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    margin:2%
+}
+
+.button{
+    background-color: #002c59;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+
+}
+.button:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.mensaje{
+  font-size: 14px;
+  color: red;
+  display: none;
+}
+.mensaje-activo{
+  display: block;
+
+}
+
+.mensaje-exito {
+	font-size: 14px;
+	color: green;
+	display: none;
+}
+
+.mensaje-exito-activo {
+	display: block;
+}
+.activo{
+  display: block;
+  color:#002c59;
+}
+
+
+
+
+
+    /* ----- -----  Estilos para Validacion ----- ----- */
+    .grupo-correcto  {
+      color: green;
+      opacity: 1;
+    }
+    
+    .grupo-incorrecto .label {
+      color: red;
+    }
+    
+    .grupo-incorrecto{
+      color: red;
+      
+    }
+
+    .input-error {
+      font-size: 12px;
+      margin-bottom: 0;
+      display: none;
+  }
+  
+  .input-error-activo {
+      display: block;
+  }
+
+    
+
+@media screen and (min-width:425px) and (max-width:767px){
+    .formulario{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+    .label {
+        display: block;
+        grid-column:1/2;
+      }
+    
+      .input{
+          width: 100%;
+          grid-column: 2/3;
+      }
+  
+      .textarea {
+        width: 100%;
+        grid-column: 1/3;
+        grid-row: 3;
+      }
+  
+      .boton-enviar{
+          grid-column: 1/3;
+          grid-row: 4;
+          width: 100%;
+          margin-top: 15px;
+      }
+}
+@media screen and (min-width: 768px) {
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      
+    }
+  
+    .label {
+      display: block;
+      margin-bottom: 0px;
+    }
+    .input {
+      width: 100%;
+      border: 0;
+    }
+    .boton-enviar{
+      grid-column: 1/3;
+      grid-row: 4;
+      width: 100%;
+      margin-top: 15px;
+  }
+  .textarea {
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 3;
+  }
+
+
+    #nom {
+      grid-row: 1;
+      grid-column: 1/2;
+    }
+    #nombre {
+        grid-row: 2;
+        grid-column: 1/2;
+      }
+
+    #ap {
+      grid-row: 1;
+      grid-column: 2/3;
+    }
+    #ape {
+        grid-row: 2;
+        grid-column: 2/3;
+      }
+    #tipo {
+      grid-row: 3;
+      grid-column: 1/2;
+    }
+    #tipo-d{
+        grid-row: 4;
+        grid-column: 1/2;
+      }
+    #num {
+      grid-row: 3;
+      grid-column: 2/3;
+    }
+    #grupo-direccion{
+      grid-column: 1/3;
+    }
+    #num-doc {
+        grid-row: 4;
+        grid-column: 2/3;
+      }
+  
+
+    .input[type="radio"] {
+      width: auto;
+      margin-right: 10px;
+    }
+
+
+
+
+    
+
+  
+
+
+}
